@@ -1,0 +1,18 @@
+.env
+.venv/
+data/
+__pycache__/
+*.pyc
+.DS_Store
+.pytest_cache/
+# Plugins stay out of the repository, except the example and the guide.
+plugins/*
+!plugins/_example/
+!plugins/README.md
+# A private repository for your plugins and components (see plugins/README.md).
+private/
+# Components are yours: they stay out of the repository (see COMPONENTS.md).
+components/*
+!components/README.md
+# Training datasets and experiments (characters.py export-dataset).
+training/

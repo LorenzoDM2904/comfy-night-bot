@@ -1,0 +1,67 @@
+{
+  "id": "video_from_photo",
+  "name": "Photo to video",
+  "version": "1.0.0",
+  "engine": "local",
+  "enabled": true,
+  "workflow": "workflow.json",
+  "model": {
+    "node": "1",
+    "field": "model_name"
+  },
+  "positive_prompt": {
+    "node": "2",
+    "field": "prompt"
+  },
+  "images": [
+    {
+      "node": "10",
+      "field": "image"
+    }
+  ],
+  "min_images": 1,
+  "max_images": 1,
+  "seed": 42,
+  "size": {
+    "width": 576,
+    "height": 1024
+  },
+  "length": 121,
+  "fps": 24,
+  "params": {
+    "seed": [
+      {
+        "node": "2",
+        "field": "seed"
+      }
+    ],
+    "width": [
+      {
+        "node": "2",
+        "field": "width"
+      }
+    ],
+    "height": [
+      {
+        "node": "2",
+        "field": "height"
+      }
+    ],
+    "length": [
+      {
+        "node": "2",
+        "field": "num_frames"
+      }
+    ],
+    "fps": [
+      {
+        "node": "2",
+        "field": "frame_rate"
+      }
+    ]
+  },
+  "output_nodes": [
+    "2"
+  ],
+  "publication_actions": []
+}

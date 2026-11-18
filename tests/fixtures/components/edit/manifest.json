@@ -1,0 +1,131 @@
+{
+  "id": "edit",
+  "name": "Photo edit",
+  "version": "1.0.0",
+  "engine": "local",
+  "enabled": true,
+  "workflow": "workflow.json",
+  "model": {
+    "node": "459:451",
+    "field": "unet_name"
+  },
+  "positive_prompt": {
+    "node": "459:500",
+    "field": "prompt"
+  },
+  "images": [
+    {
+      "node": "470",
+      "field": "image"
+    },
+    {
+      "node": "475",
+      "field": "image"
+    },
+    {
+      "node": "476",
+      "field": "image"
+    },
+    {
+      "node": "477",
+      "field": "image"
+    },
+    {
+      "node": "478",
+      "field": "image"
+    },
+    {
+      "node": "479",
+      "field": "image"
+    },
+    {
+      "node": "480",
+      "field": "image"
+    },
+    {
+      "node": "481",
+      "field": "image"
+    },
+    {
+      "node": "482",
+      "field": "image"
+    },
+    {
+      "node": "483",
+      "field": "image"
+    }
+  ],
+  "min_images": 1,
+  "max_images": 10,
+  "enhancer": {
+    "enabled": false,
+    "nodes": [
+      "459:477",
+      "459:500",
+      "459:480"
+    ],
+    "off_prompt": {
+      "node": "459:474",
+      "field": "prompt"
+    }
+  },
+  "steps": 8,
+  "size": {
+    "width": 768,
+    "height": 1024
+  },
+  "params": {
+    "steps": [
+      {
+        "node": "459:458",
+        "field": "steps"
+      }
+    ],
+    "cfg": [
+      {
+        "node": "459:458",
+        "field": "cfg"
+      }
+    ],
+    "sampler": [
+      {
+        "node": "459:458",
+        "field": "sampler_name"
+      }
+    ],
+    "scheduler": [
+      {
+        "node": "459:458",
+        "field": "scheduler"
+      }
+    ],
+    "denoise": [
+      {
+        "node": "459:458",
+        "field": "denoise"
+      }
+    ],
+    "seed": [
+      {
+        "node": "459:458",
+        "field": "seed"
+      }
+    ],
+    "width": [
+      {
+        "node": "459:456",
+        "field": "width"
+      }
+    ],
+    "height": [
+      {
+        "node": "459:456",
+        "field": "height"
+      }
+    ]
+  },
+  "output_nodes": [
+    "503"
+  ],
+  "publication_actions": []
+}

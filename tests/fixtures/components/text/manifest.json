@@ -1,0 +1,76 @@
+{
+  "id": "text",
+  "name": "Text → image",
+  "version": "1.0.0",
+  "engine": "local",
+  "enabled": false,
+  "workflow": "workflow.json",
+  "model": {
+    "node": "1",
+    "field": "unet_name"
+  },
+  "positive_prompt": {
+    "node": "4",
+    "field": "text"
+  },
+  "images": [],
+  "steps": 12,
+  "size": {
+    "width": 566,
+    "height": 1080
+  },
+  "params": {
+    "steps": [
+      {
+        "node": "7",
+        "field": "steps"
+      }
+    ],
+    "cfg": [
+      {
+        "node": "7",
+        "field": "cfg"
+      }
+    ],
+    "sampler": [
+      {
+        "node": "7",
+        "field": "sampler_name"
+      }
+    ],
+    "scheduler": [
+      {
+        "node": "7",
+        "field": "scheduler"
+      }
+    ],
+    "denoise": [
+      {
+        "node": "7",
+        "field": "denoise"
+      }
+    ],
+    "seed": [
+      {
+        "node": "7",
+        "field": "seed"
+      }
+    ],
+    "width": [
+      {
+        "node": "6",
+        "field": "width"
+      }
+    ],
+    "height": [
+      {
+        "node": "6",
+        "field": "height"
+      }
+    ]
+  },
+  "output_nodes": [
+    "9"
+  ],
+  "publication_actions": []
+}

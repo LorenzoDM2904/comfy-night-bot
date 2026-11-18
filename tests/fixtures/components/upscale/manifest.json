@@ -1,0 +1,38 @@
+{
+  "id": "upscale",
+  "name": "Upscale",
+  "version": "1.0.0",
+  "engine": "local",
+  "enabled": true,
+  "derived": true,
+  "workflow": "workflow.json",
+  "images": [
+    {
+      "node": "1",
+      "field": "image"
+    }
+  ],
+  "min_images": 1,
+  "max_images": 1,
+  "model": {
+    "node": "2",
+    "field": "model_name"
+  },
+  "params": {
+    "width": [
+      {
+        "node": "4",
+        "field": "width"
+      }
+    ],
+    "height": [
+      {
+        "node": "4",
+        "field": "height"
+      }
+    ]
+  },
+  "output_nodes": [
+    "5"
+  ]
+}
